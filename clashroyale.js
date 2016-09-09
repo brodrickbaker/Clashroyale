@@ -1,3 +1,5 @@
+function cardPurchase() {
+        
         var cost; // cost for this type of card
         var total = 0; // total cost
         var type = prompt("What kind of card is being purchased?", "common");
@@ -62,3 +64,4 @@
         } else {
             document.write("Not a valid card type") // if no valid card type is entered
         }
+}
