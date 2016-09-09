@@ -1,9 +1,47 @@
 <html>
 <head>
     <title>Clash Royale Calculator</title>
-    <script src="clashroyale.js"></script>
+    <link rel="stylesheet" type="text/css" href="clashroyale-1.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Fredoka+One" rel="stylesheet">
+    <script src="clashroyale-1.js"></script>
 </head>
 <body>
-  <button onclick= "cardPurchase()">Purchase Calculator</button>
+    <div id="body">
+        <div id="header">
+            <h1>Welcome To The Clash Royale Calculator 2.0!</h1>
+        </div>
+        <div id= "buttons">
+            <button class= "button" onclick= "cardPurchase()">Purchase Calculator</button>
+            <button class= "button" onclick= "requestCounter()">Request Calculator</button>
+        </div>
+        <div id= "results">
+            Select your arena<br>
+            <form action="clashroyale-1.php">
+            <SELECT>
+                <option value="1" name="arena" >Arena 1<br>
+                <option value="2" name="arena" >Arena 2<br>
+                <option value="3" name="arena" >Arena 3<br>
+                <option value="4" name="arena" >Arena 4<br>
+                <option value="5" name="arena" >Arena 5<br>
+                <option value="6" name="arena" >Arena 6<br>
+                <option value="7" name="arena" >Arena 7<br>
+                <option value="8" name="arena" >Arena 8<br>
+            </select>
+            What type of card are you trying to purchase?<br>
+            <input type="text" name="cardType"/><br>
+            How many card do you have currently?<br>
+            <input type="text" name="currentCards"/><br>
+            How many total cards are needed for the next level?<br>
+            <input type="text" name="totalCards"/><br>
+            <button type="submit"></button>
+            </form>
+        </div>
+        <div id="refresh">
+            <button id= "refreshbutton" onclick= "location.reload()">Refresh</button>
+        </div>
+        <div id= "footer">
+            Made by Brodrick Baker
+        </div>
+    </div>
 </body>
 </html>
